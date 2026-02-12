@@ -458,6 +458,7 @@ footer {
 .gradient-text {
    background: linear-gradient(90deg, #fff, #666);
    -webkit-background-clip: text;
+   background-clip: text;
    color: transparent;
 }
 
@@ -914,4 +915,39 @@ footer {
    font-size: 2rem;
    margin-bottom: 10px;
    color: var(--color-fg);
+}
+
+/* =========================================
+   5. MOBILE RESPONSIVENESS
+   ========================================= */
+@media (max-width: 768px) {
+
+   /* Stack Grids */
+   .skills-grid {
+      grid-template-columns: 1fr !important;
+   }
+
+   .contact-grid {
+      grid-template-columns: 1fr !important;
+   }
+
+   /* Scaling Typography */
+   .section-title {
+      font-size: 4rem !important;
+      padding-right: 0;
+   }
+
+   .massive-text {
+      font-size: 3rem !important;
+   }
+
+   .hero-title {
+      font-size: 4rem !important;
+   }
+
+   /* Contact Box Adjustments */
+   .contact-box {
+      text-align: center;
+      padding: 40px 20px;
+   }
 }
