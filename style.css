@@ -316,7 +316,7 @@ body.hovering .cursor-outline {
    top: 0;
    left: 0;
    width: 100%;
-   padding: 20px 40px;
+   padding: 10px 5%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -922,7 +922,53 @@ footer {
    ========================================= */
 @media (max-width: 768px) {
 
-   /* Stack Grids */
+   /* 5.1 HEADER & NAV */
+   #navbar {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 5% !important;
+   }
+
+   .logo {
+      font-size: 1.2rem !important;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 5px;
+   }
+
+   nav {
+      width: 100%;
+   }
+
+   nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px !important;
+      width: 100%;
+   }
+
+   .nav-link {
+      font-size: 0.7rem !important;
+      /* ~12px */
+   }
+
+   .btn-resume {
+      font-size: 0.7rem !important;
+      padding: 6px 12px;
+      width: 100%;
+      /* Full width button on second row */
+      text-align: center;
+      margin-top: 5px;
+   }
+
+   /* Adjust Hero Offset */
+   .hero-container {
+      padding-top: 160px;
+   }
+
+   /* 5.2 LAYOUT PRESETS */
    .skills-grid {
       grid-template-columns: 1fr !important;
    }
@@ -931,23 +977,38 @@ footer {
       grid-template-columns: 1fr !important;
    }
 
-   /* Scaling Typography */
+   /* 5.3 TYPOGRAPHY SCALING */
    .section-title {
-      font-size: 4rem !important;
+      font-size: 3rem !important;
       padding-right: 0;
+      text-align: center;
+      width: 100%;
    }
 
    .massive-text {
-      font-size: 3rem !important;
+      font-size: 2.5rem !important;
    }
 
    .hero-title {
-      font-size: 4rem !important;
+      font-size: 3.5rem !important;
    }
 
-   /* Contact Box Adjustments */
+   /* 5.4 COMPONENTS */
    .contact-box {
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px 15px;
+   }
+
+   .project-row {
+      grid-template-columns: 1fr auto;
+   }
+
+   .proj-id,
+   .proj-tag {
+      display: none;
+   }
+
+   .proj-name {
+      font-size: 1.5rem;
    }
 }
